@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Connect | Ankit Singh</title>
+  <meta name="author" content="Ankit Singh">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="connect.html"><strong>Connect</strong></a>
+    <a href="https://scholar.google.com/citations?hl=en&user=ntESBvIAAAAJ">Scholar</a>
+  </div>
+
+  <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
+    <tr>
+      <td style="padding:20px">
+        <heading>Connect</heading>
+        <p>
+          Feel free to reach out for research discussions, collaborations, paper feedback, career questions, or anything
+          related to computer vision and multimodal AI.
+        </p>
+        <p>
+          Email: <a href="mailto:singh.ankit@cse.iitm.ac.in">singh.ankit@cse.iitm.ac.in</a>
+        </p>
+
+        <form class="contact-form" id="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            <option value="">Choose a topic</option>
+            <option>Research collaboration</option>
+            <option>Paper / project discussion</option>
+            <option>Advice</option>
+            <option>General conversation</option>
+            <option>Other</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send message</button>
+          <p class="form-note">Submitting opens your email app with the message pre-filled.</p>
+        </form>
+      </td>
+    </tr>
+  </tbody></table>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var name = document.getElementById('name').value.trim();
+      var topic = document.getElementById('topic').value;
+      var message = document.getElementById('message').value.trim();
+      var subject = encodeURIComponent('[' + topic + '] Message from ' + name);
+      var body = encodeURIComponent(message);
+
+      window.location.href = 'mailto:singh.ankit@cse.iitm.ac.in?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>

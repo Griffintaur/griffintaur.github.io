@@ -81,7 +81,12 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  background: #fff;
 }
 
 strong {
@@ -97,7 +102,7 @@ heading {
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 name {
@@ -105,25 +110,71 @@ name {
   font-size: 32px;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
+.topnav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 14px 0 0;
+  text-align: right;
+  font-size: 14px;
 }
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.topnav a {
+  margin-left: 14px;
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.paper-links {
+  margin-top: 6px;
+}
+
+.paper-links a {
+  margin-right: 10px;
+}
+
+.paper-thumb img {
+  width: 160px;
+  height: auto;
+  display: block;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 8px 14px;
+  border: 1px solid #1772d0;
+  background: #1772d0;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #125aa3;
+}
+
+.form-note {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #666;
 }
 
 span.highlight {
