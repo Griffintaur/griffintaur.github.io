@@ -113,13 +113,31 @@ name {
 .topnav {
   max-width: 800px;
   margin: 0 auto;
-  padding: 14px 0 0;
-  text-align: right;
+  padding: 14px 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 .topnav a {
-  margin-left: 14px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.patent-list td {
+  padding: 10px 20px;
+  vertical-align: top;
+}
+
+.patent-list p {
+  margin: 0;
+}
+
+.patent-list .patent-gap td {
+  padding-top: 14px;
 }
 
 .paper-links {
